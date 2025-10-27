@@ -19,7 +19,6 @@
         }
     </script>
     <style>
-        /* Custom styles if necessary, though Tailwind is preferred */
         section {
             padding-top: 5rem;
             padding-bottom: 5rem;
@@ -34,7 +33,8 @@
             <div class="space-x-4">
                 <a href="#about" class="text-lg hover:text-primary-blue">About</a>
                 <a href="#skills" class="text-lg hover:text-primary-blue">Skills</a>
-                <a href="#projects" class="text-lg hover:text-primary-blue">Projects</a>
+                <a href="#work" class="text-lg hover:text-primary-blue">Work Projects</a>
+                <a href="#personal" class="text-lg hover:text-primary-blue">Personal</a>
                 <a href="#contact" class="text-lg hover:text-primary-blue">Contact</a>
             </div>
         </nav>
@@ -51,11 +51,13 @@
             <p class="text-lg text-gray-600 mb-10">
                 Passionate about building scalable solutions and learning new technologies. Focused on clean code, unit testing, and delivering tangible business value.
             </p>
-            <a href="#projects" class="bg-primary-blue text-white py-3 px-8 rounded-lg text-xl font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">
+            <a href="#work" class="bg-primary-blue text-white py-3 px-8 rounded-lg text-xl font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">
                 View Featured Projects
             </a>
         </div>
     </section>
+
+    ---
 
     <section id="about" class="container mx-auto px-6 max-w-5xl">
         <h3 class="text-4xl font-bold text-text-dark mb-10 text-center border-b-4 border-primary-blue pb-2 inline-block">
@@ -79,96 +81,116 @@
         </div>
     </section>
 
+    ---
+
     <section id="skills" class="bg-secondary-gray">
         <div class="container mx-auto px-6 max-w-5xl">
             <h3 class="text-4xl font-bold text-text-dark mb-12 text-center border-b-4 border-primary-blue pb-2 inline-block">
                 Technical Skills
             </h3>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <h4 class="text-xl font-semibold mb-3 text-primary-blue">Languages & Core</h4>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>JavaScript (ES6+)</li>
-                        <li>Python</li>
-                        <li>HTML5 & CSS3</li>
-                        <li>SQL (PostgreSQL)</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <h4 class="text-xl font-semibold mb-3 text-primary-blue">Frontend</h4>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>React & Redux</li>
-                        <li>Tailwind CSS</li>
-                        <li>Responsive Design</li>
-                        <li>Web Performance</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <h4 class="text-xl font-semibold mb-3 text-primary-blue">Backend & DevOps</h4>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>Node.js & Express</li>
-                        <li>REST APIs</li>
-                        <li>Git & GitHub</li>
-                        <li>Docker (Basic)</li>
-                    </ul>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <h4 class="text-xl font-semibold mb-3 text-primary-blue">Tools & QA</h4>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>VS Code, Postman</li>
-                        <li>Jest / Testing Library</li>
-                        <li>WebPack/Vite</li>
-                        <li>Agile Methodologies</li>
-                    </ul>
-                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"><h4 class="text-xl font-semibold mb-3 text-primary-blue">Languages & Core</h4><ul class="list-disc list-inside text-gray-700 space-y-1"><li>JavaScript (ES6+)</li><li>Python</li><li>HTML5 & CSS3</li><li>SQL (PostgreSQL)</li></ul></div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"><h4 class="text-xl font-semibold mb-3 text-primary-blue">Frontend</h4><ul class="list-disc list-inside text-gray-700 space-y-1"><li>React & Redux</li><li>Tailwind CSS</li><li>Responsive Design</li><li>Web Performance</li></ul></div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"><h4 class="text-xl font-semibold mb-3 text-primary-blue">Backend & DevOps</h4><ul class="list-disc list-inside text-gray-700 space-y-1"><li>Node.js & Express</li><li>REST APIs</li><li>Git & GitHub</li><li>Docker (Basic)</li></ul></div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"><h4 class="text-xl font-semibold mb-3 text-primary-blue">Tools & QA</h4><ul class="list-disc list-inside text-gray-700 space-y-1"><li>VS Code, Postman</li><li>Jest / Testing Library</li><li>WebPack/Vite</li><li>Agile Methodologies</li></ul></div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="container mx-auto px-6 max-w-5xl">
-        <h3 class="text-4xl font-bold text-text-dark mb-12 text-center border-b-4 border-primary-blue pb-2 inline-block">
-            Featured Projects
+    ---
+
+    <section id="work" class="container mx-auto px-6 max-w-5xl">
+        <h3 class="text-4xl font-bold text-text-dark mb-4 text-center border-b-4 border-primary-blue pb-2 inline-block">
+            Professional Work Experience
         </h3>
+        <p class="text-center text-gray-600 mb-8 italic p-2 border-l-4 border-yellow-500 bg-yellow-50">
+            **Disclaimer:** Due to **Non-Disclosure Agreements (NDAs)**, I cannot share proprietary code or live links. I will only describe my role, the project's impact, and the technologies used.
+        </p>
 
-        <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-8 hover:shadow-2xl transition duration-500">
-            <h4 class="text-2xl font-bold text-primary-blue mb-2">1. Task Management System (Full-Stack)</h4>
-            <p class="text-sm text-gray-500 mb-4">Personal Project | Stack: MERN (MongoDB, Express, React, Node)</p>
+        <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-8">
+            <h4 class="text-2xl font-bold text-primary-blue mb-2">1. E-commerce Checkout Service Optimization</h4>
+            <p class="text-sm text-gray-500 mb-4">Employer: [Company Name] | Role: Junior Backend Developer</p>
             <p class="text-gray-700 mb-4">
-                A complete application for personal project management. It allows users to register, authenticate (JWT), and create/edit/delete tasks with different priority statuses. <span class="font-semibold">Demonstrates my ability to integrate frontend and backend.</span>
+                Refactored the validation and payment processing service using **Node.js** and an **AWS Lambda** function. My contribution involved implementing unit tests and optimizing database connection pooling.
             </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">React</span>
-                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Node.js/Express</span>
-                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">MongoDB</span>
-                <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">JWT Auth</span>
-            </div>
-            <div class="flex space-x-4">
-                <a href="[URL_DEMO_1]" target="_blank" class="text-primary-blue font-semibold hover:text-blue-700">🚀 Live Demo</a>
-                <a href="[URL_GITHUB_1]" target="_blank" class="text-gray-700 font-semibold hover:text-text-dark">🔗 Source Code</a>
-            </div>
-        </div>
-
-        <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-8 hover:shadow-2xl transition duration-500">
-            <h4 class="text-2xl font-bold text-primary-blue mb-2">2. Book Recommendation API</h4>
-            <p class="text-sm text-gray-500 mb-4">Academic Project | Stack: Python (Flask), PostgreSQL, Algorithms</p>
-            <p class="text-gray-700 mb-4">
-                Implementation of a RESTful API that suggests books to users based on a simple cosine similarity algorithm (Collaborative Filtering). The focus was on <span class="font-semibold">optimizing SQL queries and backend business logic.</span>
+            <p class="font-semibold text-green-700 mb-4">
+                Key Result: **Reduced checkout processing time by 15%** and lowered error rates during high traffic events.
             </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Python/Flask</span>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Node.js</span>
+                <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded">AWS Lambda</span>
                 <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">PostgreSQL</span>
-                <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">REST API</span>
-            </div>
-            <div class="flex space-x-4">
-                <a href="[URL_DEMO_2]" target="_blank" class="text-primary-blue font-semibold hover:text-blue-700">🚀 API Documentation</a>
-                <a href="[URL_GITHUB_2]" target="_blank" class="text-gray-700 font-semibold hover:text-text-dark">🔗 Source Code</a>
             </div>
         </div>
-        
+
         </section>
+
+    ---
+
+    <section id="personal" class="bg-secondary-gray">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h3 class="text-4xl font-bold text-text-dark mb-12 text-center border-b-4 border-primary-blue pb-2 inline-block">
+                Personal Projects
+            </h3>
+            
+            <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-8 hover:shadow-2xl transition duration-500">
+                <h4 class="text-2xl font-bold text-primary-blue mb-2">1. Task Management System (Full-Stack)</h4>
+                <p class="text-sm text-gray-500 mb-4">Focus: Full-Stack Integration, JWT Authentication</p>
+                <p class="text-gray-700 mb-4">
+                    A complete application for personal project management. It allows users to register, authenticate (JWT), and create/edit/delete tasks with different priority statuses. <span class="font-semibold">Demonstrates my ability to integrate frontend and backend.</span>
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">React</span>
+                    <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Node.js/Express</span>
+                    <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">MongoDB</span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="[URL_DEMO_1]" target="_blank" class="text-primary-blue font-semibold hover:text-blue-700">🚀 Live Demo</a>
+                    <a href="[URL_GITHUB_1]" target="_blank" class="text-gray-700 font-semibold hover:text-text-dark">🔗 Source Code</a>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-8 hover:shadow-2xl transition duration-500">
+                <h4 class="text-2xl font-bold text-primary-blue mb-2">2. Simple Chat Application with WebSockets</h4>
+                <p class="text-sm text-gray-500 mb-4">Focus: Real-time Communication, Scalability Fundamentals</p>
+                <p class="text-gray-700 mb-4">
+                    A multi-room chat application built to understand and implement real-time communication using **WebSockets** (Socket.IO). The project demonstrates proficiency in concurrent connections and state management across multiple clients.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">JavaScript</span>
+                    <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Socket.IO</span>
+                    <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Node.js</span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="[URL_DEMO_2]" target="_blank" class="text-primary-blue font-semibold hover:text-blue-700">🚀 Live Demo</a>
+                    <a href="[URL_GITHUB_2]" target="_blank" class="text-gray-700 font-semibold hover:text-text-dark">🔗 Source Code</a>
+                </div>
+            </div>
+
+            <h4 class="text-3xl font-bold text-text-dark mt-16 mb-8 text-center border-b-2 border-gray-400 pb-1 inline-block" id="academic">
+                Academic/Course Projects
+            </h4>
+            
+            <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-8">
+                <h4 class="text-2xl font-bold text-primary-blue mb-2">3. Book Recommendation Engine</h4>
+                <p class="text-sm text-gray-500 mb-4">Course: Data Structures and Algorithms | Focus: Optimizing Search</p>
+                <p class="text-gray-700 mb-4">
+                    Developed a console application in **Python** implementing a simple **Collaborative Filtering algorithm**. The focus was on demonstrating understanding of algorithm efficiency ($O(n)$ complexity) and clean Python implementation.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
+                    <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Algorithms</span>
+                    <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Data Structures</span>
+                </div>
+                <div class="flex space-x-4 mt-4">
+                    <a href="[URL_GITHUB_3]" target="_blank" class="text-gray-700 font-semibold hover:text-text-dark">🔗 Source Code</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    ---
 
     <section id="contact" class="bg-primary-blue text-white">
         <div class="container mx-auto px-6 max-w-5xl text-center">
