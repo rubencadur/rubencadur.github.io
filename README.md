@@ -36,7 +36,7 @@ The projects within this portfolio (detailed in `index.html`) highlight the foll
 
 To view the fully responsive, single-page application built using HTML and Tailwind CSS, please visit the deployed GitHub Pages link:
 
-[View Portfolio Live Demo](https://[YOUR_GITHUB_USERNAME].github.io/[REPOSITORY_NAME])
+[View Portfolio Live Demo](https://rubencadur.github.io/)
 
 ### Local Setup
 
