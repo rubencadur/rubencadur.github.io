@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruben Cadenas | Junior Software Engineer Portfolio</title>
+    <title>Ruben Cadenas | Senior Solutions Architect Portfolio</title>
+    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <!-- Tailwind Configuration for Customization -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'primary-blue': '#1e40af', // Dark Blue
-                'secondary-gray': '#f3f4f6', // Light Gray
-                'text-dark': '#1f2937', // Dark Text
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1a73e8',
+                        'dark-bg': '#121212',
+                        'dark-card': '#1e1e1e',
+                        'dark-text': '#e0e0e0',
+                    }
+                }
             }
-          }
         }
     </script>
     <style>
@@ -25,196 +35,174 @@
         }
     </style>
 </head>
-<body class="bg-white text-text-dark font-sans">
 
-    <header class="sticky top-0 bg-white shadow-md z-50">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-primary-blue hover:text-blue-700">Ruben Cadenas</a>
-            <div class="space-x-4">
-                <a href="#about" class="text-lg hover:text-primary-blue">About</a>
-                <a href="#skills" class="text-lg hover:text-primary-blue">Skills</a>
-                <a href="#work" class="text-lg hover:text-primary-blue">Work Projects</a>
-                <a href="#personal" class="text-lg hover:text-primary-blue">Personal</a>
-                <a href="#contact" class="text-lg hover:text-primary-blue">Contact</a>
+<body class="bg-dark-bg text-dark-text min-h-screen">
+
+    <!-- Header & Hero Section -->
+    <header class="py-16 px-4 sm:px-6 lg:px-8 bg-dark-card shadow-lg rounded-b-xl">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-primary-blue mb-2">Ruben Rogelio Cadenas Uribe</h1>
+            <h2 class="text-2xl sm:text-3xl font-light text-gray-300">Senior Solutions Architect | Technical Lead</h2>
+            <p class="mt-4 max-w-3xl text-gray-400">
+                Highly accomplished professional with over **20 years of experience** designing and delivering scalable enterprise software, cloud, and AI solutions across the Americas. Expert in transforming complex business needs into resilient architectures using **.NET C#**, **Python**, and **Multi-Cloud (GCP, AWS)**.
+            </p>
+            
+            <!-- Contact and Links -->
+            <div class="mt-6 flex flex-wrap gap-4 text-sm font-medium">
+                <a href="https://linkedin.com/in/rubencadenas" target="_blank" class="flex items-center text-primary-blue hover:text-blue-400 transition duration-300">
+                    <!-- Icon for LinkedIn (Inline SVG) -->
+                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.559-4 0v5.604h-3v-11h3v1.765c1.395-2.215 4-2.427 4-5.604 0-.012 0-.024 0-.036z"/></svg>
+                    LinkedIn Profile
+                </a>
+                <a href="mailto:ruben.cadenas@hotmail.com" class="flex items-center text-primary-blue hover:text-blue-400 transition duration-300">
+                    <!-- Icon for Email (Inline SVG) -->
+                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                    Email Contact
+                </a>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <section id="hero" class="bg-secondary-gray min-h-screen flex items-center justify-center text-center">
-        <div class="max-w-4xl px-6">
-            <h1 class="text-5xl md:text-6xl font-extrabold mb-4">
-                👋 Hi, I'm <span class="text-primary-blue">Ruben Cadenas</span>.
-            </h1>
-            <h2 class="text-2xl md:text-3xl font-medium text-gray-700 mb-8">
-                Junior Software Engineer | Full-Stack Developer (MERN/Python)
-            </h2>
-            <p class="text-lg text-gray-600 mb-10">
-                Passionate about building scalable solutions and learning new technologies. Focused on clean code, unit testing, and delivering tangible business value.
-            </p>
-            <a href="#work" class="bg-primary-blue text-white py-3 px-8 rounded-lg text-xl font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">
-                View Featured Projects
-            </a>
-        </div>
-    </section>
-
-    ---
-
-    <section id="about" class="container mx-auto px-6 max-w-5xl">
-        <h3 class="text-4xl font-bold text-text-dark mb-10 text-center border-b-4 border-primary-blue pb-2 inline-block">
-            About Me
-        </h3>
-        <div class="flex flex-col md:flex-row items-center gap-8">
-            <div class="md:w-1/3">
-                <div class="bg-gray-300 w-48 h-48 rounded-full mx-auto flex items-center justify-center text-gray-500 text-sm">Photo Here</div>
-            </div>
-            <div class="md:w-2/3 text-lg text-gray-700">
-                <p class="mb-4">
-                    My programming journey started with <span class="font-semibold">Python and JavaScript</span>. During my studies, I specialized in full-stack web development, prioritizing microservices architecture and client-side efficiency.
-                </p>
-                <p class="mb-4">
-                    I am seeking a role where I can contribute to challenging projects, applying my knowledge of **data structures, algorithms** and my commitment to development best practices (Git, basic CI/CD).
-                </p>
-                <p>
-                    I am currently deepening my skills in <span class="font-semibold">Docker and Kubernetes</span>.
-                </p>
+    <!-- Core Competencies Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-gray-200 mb-6 border-b border-gray-700 pb-2">Core Technical Competencies</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-4 bg-dark-card rounded-lg shadow-xl border border-primary-blue/30">
+                    <p class="text-xl font-semibold">Software Architecture</p>
+                    <p class="text-sm text-gray-400">20+ Yrs. of Systems Design</p>
+                </div>
+                <div class="p-4 bg-dark-card rounded-lg shadow-xl border border-primary-blue/30">
+                    <p class="text-xl font-semibold">Cloud & Data Eng.</p>
+                    <p class="text-sm text-gray-400">GCP Certified (AWS/Azure Exp.)</p>
+                </div>
+                <div class="p-4 bg-dark-card rounded-lg shadow-xl border border-primary-blue/30">
+                    <p class="text-xl font-semibold">AI/NLP Solutions</p>
+                    <p class="text-sm text-gray-400">DialogFlow, OpenAI APIs, Python</p>
+                </div>
+                <div class="p-4 bg-dark-card rounded-lg shadow-xl border border-primary-blue/30">
+                    <p class="text-xl font-semibold">Enterprise Stack</p>
+                    <p class="text-sm text-gray-400">.NET C#, Java, JavaScript (Angular)</p>
+                </div>
             </div>
         </div>
     </section>
 
-    ---
+    <!-- Project Showcase Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-gray-200 mb-8 border-b border-gray-700 pb-2">Project Showcase (Focus on Architecture & Impact)</h3>
 
-    <section id="skills" class="bg-secondary-gray">
-        <div class="container mx-auto px-6 max-w-5xl">
-            <h3 class="text-4xl font-bold text-text-dark mb-12 text-center border-b-4 border-primary-blue pb-2 inline-block">
-                Technical Skills
-            </h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"><h4 class="text-xl font-semibold mb-3 text-primary-blue">Languages & Core</h4><ul class="list-disc list-inside text-gray-700 space-y-1"><li>JavaScript (ES6+)</li><li>Python</li><li>HTML5 & CSS3</li><li>SQL (PostgreSQL)</li></ul></div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"><h4 class="text-xl font-semibold mb-3 text-primary-blue">Frontend</h4><ul class="list-disc list-inside text-gray-700 space-y-1"><li>React & Redux</li><li>Tailwind CSS</li><li>Responsive Design</li><li>Web Performance</li></ul></div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"><h4 class="text-xl font-semibold mb-3 text-primary-blue">Backend & DevOps</h4><ul class="list-disc list-inside text-gray-700 space-y-1"><li>Node.js & Express</li><li>REST APIs</li><li>Git & GitHub</li><li>Docker (Basic)</li></ul></div>
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300"><h4 class="text-xl font-semibold mb-3 text-primary-blue">Tools & QA</h4><ul class="list-disc list-inside text-gray-700 space-y-1"><li>VS Code, Postman</li><li>Jest / Testing Library</li><li>WebPack/Vite</li><li>Agile Methodologies</li></ul></div>
-            </div>
-        </div>
-    </section>
-
-    ---
-
-    <section id="work" class="container mx-auto px-6 max-w-5xl">
-        <h3 class="text-4xl font-bold text-text-dark mb-4 text-center border-b-4 border-primary-blue pb-2 inline-block">
-            Professional Work Experience
-        </h3>
-        <p class="text-center text-gray-600 mb-8 italic p-2 border-l-4 border-yellow-500 bg-yellow-50">
-            **Disclaimer:** Due to **Non-Disclosure Agreements (NDAs)**, I cannot share proprietary code or live links. I will only describe my role, the project's impact, and the technologies used.
-        </p>
-
-        <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-8">
-            <h4 class="text-2xl font-bold text-primary-blue mb-2">1. E-commerce Checkout Service Optimization</h4>
-            <p class="text-sm text-gray-500 mb-4">Employer: [Company Name] | Role: Junior Backend Developer</p>
-            <p class="text-gray-700 mb-4">
-                Refactored the validation and payment processing service using **Node.js** and an **AWS Lambda** function. My contribution involved implementing unit tests and optimizing database connection pooling.
-            </p>
-            <p class="font-semibold text-green-700 mb-4">
-                Key Result: **Reduced checkout processing time by 15%** and lowered error rates during high traffic events.
-            </p>
-            <div class="flex flex-wrap gap-2">
-                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Node.js</span>
-                <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded">AWS Lambda</span>
-                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">PostgreSQL</span>
-            </div>
-        </div>
-
-        </section>
-
-    ---
-
-    <section id="personal" class="bg-secondary-gray">
-        <div class="container mx-auto px-6 max-w-5xl">
-            <h3 class="text-4xl font-bold text-text-dark mb-12 text-center border-b-4 border-primary-blue pb-2 inline-block">
-                Personal Projects
-            </h3>
-            
-            <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-8 hover:shadow-2xl transition duration-500">
-                <h4 class="text-2xl font-bold text-primary-blue mb-2">1. Task Management System (Full-Stack)</h4>
-                <p class="text-sm text-gray-500 mb-4">Focus: Full-Stack Integration, JWT Authentication</p>
-                <p class="text-gray-700 mb-4">
-                    A complete application for personal project management. It allows users to register, authenticate (JWT), and create/edit/delete tasks with different priority statuses. <span class="font-semibold">Demonstrates my ability to integrate frontend and backend.</span>
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">React</span>
-                    <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Node.js/Express</span>
-                    <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">MongoDB</span>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="[URL_DEMO_1]" target="_blank" class="text-primary-blue font-semibold hover:text-blue-700">🚀 Live Demo</a>
-                    <a href="[URL_GITHUB_1]" target="_blank" class="text-gray-700 font-semibold hover:text-text-dark">🔗 Source Code</a>
-                </div>
-            </div>
-
-            <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-8 hover:shadow-2xl transition duration-500">
-                <h4 class="text-2xl font-bold text-primary-blue mb-2">2. Simple Chat Application with WebSockets</h4>
-                <p class="text-sm text-gray-500 mb-4">Focus: Real-time Communication, Scalability Fundamentals</p>
-                <p class="text-gray-700 mb-4">
-                    A multi-room chat application built to understand and implement real-time communication using **WebSockets** (Socket.IO). The project demonstrates proficiency in concurrent connections and state management across multiple clients.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">JavaScript</span>
-                    <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Socket.IO</span>
-                    <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Node.js</span>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="[URL_DEMO_2]" target="_blank" class="text-primary-blue font-semibold hover:text-blue-700">🚀 Live Demo</a>
-                    <a href="[URL_GITHUB_2]" target="_blank" class="text-gray-700 font-semibold hover:text-text-dark">🔗 Source Code</a>
-                </div>
-            </div>
-
-            <h4 class="text-3xl font-bold text-text-dark mt-16 mb-8 text-center border-b-2 border-gray-400 pb-1 inline-block" id="academic">
-                Academic/Course Projects
-            </h4>
-            
-            <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 mb-8">
-                <h4 class="text-2xl font-bold text-primary-blue mb-2">3. Book Recommendation Engine</h4>
-                <p class="text-sm text-gray-500 mb-4">Course: Data Structures and Algorithms | Focus: Optimizing Search</p>
-                <p class="text-gray-700 mb-4">
-                    Developed a console application in **Python** implementing a simple **Collaborative Filtering algorithm**. The focus was on demonstrating understanding of algorithm efficiency ($O(n)$ complexity) and clean Python implementation.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
-                    <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded">Algorithms</span>
-                    <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Data Structures</span>
-                </div>
-                <div class="flex space-x-4 mt-4">
-                    <a href="[URL_GITHUB_3]" target="_blank" class="text-gray-700 font-semibold hover:text-text-dark">🔗 Source Code</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    ---
-
-    <section id="contact" class="bg-primary-blue text-white">
-        <div class="container mx-auto px-6 max-w-5xl text-center">
-            <h3 class="text-4xl font-bold mb-4">Let's Connect!</h3>
-            <p class="text-xl mb-6">I am currently open to new software development opportunities.</p>
-            <div class="flex justify-center space-x-8 text-2xl">
-                <a href="mailto:your.email@example.com" class="hover:text-yellow-300 transition duration-300" title="Email Address">
+            <!-- PROJECT CARD 1: AI Chatbot Platform (Cloud & AI) -->
+            <div class="bg-dark-card p-6 rounded-xl shadow-2xl mb-10 border border-primary-blue/50">
+                <h4 class="text-2xl font-bold text-primary-blue mb-4">1. AI-Powered Sales Chatbot and Multi-Platform Integration System</h4>
+                
+                <div class="md:grid md:grid-cols-3 gap-6">
+                    <div class="md:col-span-2">
+                        <p class="text-lg font-semibold text-gray-300 mb-2">Problem & Scope:</p>
+                        <p class="text-gray-400 mb-4">
+                            Designed a high-scale sales and customer service solution capable of integrating with multiple chat channels (Messenger, WhatsApp, Web) to automatically qualify leads and handle high traffic volumes using Machine Learning techniques.
+                        </p>
+                        
+                        <p class="text-lg font-semibold text-gray-300 mb-2">Architectural Solution:</p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                            <li>Implemented a **Serverless/Containerized architecture** using **Google Cloud (DialogFlow, App Engine, Compute Engine)** for resilience.</li>
+                            <li>Used **Python** and **NodeJS** for the backend logic and real-time communication via Sockets and **Firebase**.</li>
+                            <li>Integrated the **WhatsApp Business API** and other platforms, requiring robust API error handling and traffic management.</li>
+                        </ul>
+                    </div>
                     
-                </a>
-                <a href="[URL_LINKEDIN]" target="_blank" class="hover:text-yellow-300 transition duration-300" title="LinkedIn">
+                    <div class="md:col-span-1 bg-dark-bg p-4 rounded-lg">
+                        <p class="text-lg font-bold text-primary-blue mb-2">Key Results & Metrics</p>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li class="font-medium">**Scalability:** Successfully supported large, concurrent client loads in the finance and education sectors.</li>
+                            <li class="font-medium">**Efficiency:** Achieved 24/7 lead qualification, significantly optimizing sales funnel entry.</li>
+                            <li class="font-medium">**Tech Stack:** Python, NodeJS, Angular, GCP (DialogFlow), Firebase.</li>
+                        </ul>
+                        <!-- Placeholder for Architecture Diagram -->
+                        <div class="mt-4 bg-gray-700/50 h-20 flex items-center justify-center rounded-md text-gray-500 text-xs italic">
+                            [Architecture Diagram Placeholder: GCP Flow]
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT CARD 2: SSP Enterprise Tool (C# / .NET Architecture) -->
+            <div class="bg-dark-card p-6 rounded-xl shadow-2xl mb-10 border border-primary-blue/50">
+                <h4 class="text-2xl font-bold text-primary-blue mb-4">2. SSP: Self-Service Portal for Case Tracking (Deloitte)</h4>
+                
+                <div class="md:grid md:grid-cols-3 gap-6">
+                    <div class="md:col-span-2">
+                        <p class="text-lg font-semibold text-gray-300 mb-2">Problem & Scope:</p>
+                        <p class="text-gray-400 mb-4">
+                            Led the design and implementation of an internal self-service portal (SSP) for a major consulting firm to register, manage, and track employee support cases (tickets) across the Latam region.
+                        </p>
+                        
+                        <p class="text-lg font-semibold text-gray-300 mb-2">Architectural Solution:</p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                            <li>Implemented a robust **.NET C# MVC** architecture for high reliability and separation of concerns (Design Patterns).</li>
+                            <li>Employed **JQuery, JSON, and AJAX** for efficient, secure asynchronous UI updates and optimal front-end performance.</li>
+                            <li>Backend built on **MsSQL Server**, focusing on data integrity for mission-critical case management.</li>
+                        </ul>
+                    </div>
                     
-                </a>
-                <a href="[URL_GITHUB_PERFIL]" target="_blank" class="hover:text-yellow-300 transition duration-300" title="GitHub">
+                    <div class="md:col-span-1 bg-dark-bg p-4 rounded-lg">
+                        <p class="text-lg font-bold text-primary-blue mb-2">Key Results & Metrics</p>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li class="font-medium">**Reliability:** Delivered a highly dependable system critical for firm-wide operations.</li>
+                            <li class="font-medium">**Architecture:** Validated expertise in enterprise-level .NET C# development and MVC patterns.</li>
+                            <li class="font-medium">**Tech Stack:** .NET C# (MVC), JQuery, Javascript, MsSQL 2008R2.</li>
+                        </ul>
+                        <!-- Placeholder for Architecture Diagram -->
+                        <div class="mt-4 bg-gray-700/50 h-20 flex items-center justify-center rounded-md text-gray-500 text-xs italic">
+                            [Architecture Diagram Placeholder: .NET C# MVC Flow]
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT CARD 3: E-INDI Financial Management Solution (Global Experience) -->
+            <div class="bg-dark-card p-6 rounded-xl shadow-2xl border border-primary-blue/50">
+                <h4 class="text-2xl font-bold text-primary-blue mb-4">3. E-INDI: Web Solution for Individual Life Insurance Policy Management</h4>
+                
+                <div class="md:grid md:grid-cols-3 gap-6">
+                    <div class="md:col-span-2">
+                        <p class="text-lg font-semibold text-gray-300 mb-2">Problem & Scope:</p>
+                        <p class="text-gray-400 mb-4">
+                            Developed a complex web solution for an insurance company to automate the entire lifecycle of individual and investment policies, from initial digitizing and maintenance to maintenance and control.
+                        </p>
+                        
+                        <p class="text-lg font-semibold text-gray-300 mb-2">Architectural Solution:</p>
+                        <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                            <li>Built the solution in **.NET C#**, prioritizing security and data integrity essential for the financial/insurance sector.</li>
+                            <li>Utilized **DB2** as the core database, demonstrating integration capability with robust, high-performance enterprise systems.</li>
+                            <li>Included automated modules for official reporting (**Crystal Reports**) and policy notifications (**SMTP**).</li>
+                        </ul>
+                    </div>
                     
-                </a>
-                <a href="[URL_CV]" target="_blank" class="bg-white text-primary-blue py-2 px-4 rounded-lg text-lg font-semibold hover:bg-gray-200 transition duration-300" title="Download CV">
-                    Download CV
-                </a>
+                    <div class="md:col-span-1 bg-dark-bg p-4 rounded-lg">
+                        <p class="text-lg font-bold text-primary-blue mb-2">Key Results & Metrics</p>
+                        <ul class="text-sm text-gray-300 space-y-2">
+                            <li class="font-medium">**Automation:** Automated critical business processes, reducing manual errors in policy management.</li>
+                            <li class="font-medium">**Data Integrity:** Expertise in handling sensitive transactional data and integrating with DB2.</li>
+                            <li class="font-medium">**Global Experience:** Project scope included complex regulatory compliance similar to those handled for US/Canadian clients (Mission3, P3M).</li>
+                        </ul>
+                        <!-- Placeholder for Architecture Diagram -->
+                        <div class="mt-4 bg-gray-700/50 h-20 flex items-center justify-center rounded-md text-gray-500 text-xs italic">
+                            [Architecture Diagram Placeholder: .NET C# & DB2 Integration]
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-text-dark text-white py-4 text-center">
-        <p class="text-sm">&copy; 2025 Ruben Cadenas. Built with ❤️ and Tailwind CSS.</p>
+    <!-- Footer -->
+    <footer class="bg-dark-card py-6 mt-10 rounded-t-xl">
+        <div class="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Ruben Cadenas | Senior Solutions Architect</p>
+            <p>Built with HTML & Tailwind CSS</p>
+        </div>
     </footer>
 
 </body>
